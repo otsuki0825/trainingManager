@@ -1,0 +1,132 @@
+@charset "UTF-8";
+body{
+	font-family: "メイリオ";
+	 background-color:ivory ;
+
+}
+.center{
+	 text-align:center
+}
+
+
+.a1{
+ 	display: inline-block;
+    width: 100%;
+    padding: 10px;
+    border: 5px solid #999;
+    box-sizing: border-box;
+    background: #f2f2f2;
+    margin: 0.5em 0;
+    line-height: 1.5;
+    height: 6em;
+}
+
+.a2 {
+  background-color: yellow;
+  font-size: 30px;
+  border-radius: 5px;
+  border-bottom: solid 3px goldenrod;
+  box-shadow: 3px 3px 3px gray;
+  transition: 0.3s;
+}
+
+.click:active {
+  transform: translateY(2px);
+  border-bottom: none;
+}
+.a2:hover {
+  background-color: orange;
+}
+
+.menu {
+    max-width: 600px;
+}
+
+.menu a {
+    display: block;
+    padding: 15px;
+    text-decoration: none;
+    color: #000;
+}
+
+label {
+    display: block;
+    margin: 0 0 4px 0;
+    padding : 15px;
+    line-height: 1;
+    color :#fff;
+    background : green;
+    cursor :pointer;
+}
+
+
+.menu ul {
+    margin: 0;
+    padding: 0;
+    background :#f4f4f4;
+    list-style: none;
+}
+
+.menu li {
+    height: 0;
+    overflow: hidden;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+}
+
+#menu_bar01:checked ~ #links01 li,
+#menu_bar02:checked ~ #links02 li {
+    height: 54px;
+    opacity: 1;
+}
+
+.example2{
+    outline: none;
+    border: none;
+    background: ivory;
+}
+.small{
+	width: 50px;
+}
+.sideby{
+	display: flex;
+	justify-content: center;
+}
+
+.box {
+  width: 100px;
+  height: 100px;
+  background: #000;
+  animation: rotation 2s ease 0s 1 alternate none running;
+}
+
+@keyframes rotation {
+  0% {
+    transform: scale(.3);
+  }
+
+  50% {
+    transform: scale(.6) rotate(-45deg);
+    background: red;
+  }
+
+  100% {
+    transform: scale(1) rotate(180deg);
+    background: blue;
+  }
+}
+
+.dada{
+	animation: rotation 2s ease 0s 1 alternate none running;
+	animation-iteration-count:infinite;
+}
+
+:root {
+  --effect: hover 1s linear infinite;
+}
+*{
+   margin:0;
+}
